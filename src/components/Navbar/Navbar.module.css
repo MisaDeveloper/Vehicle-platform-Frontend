@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #4895EF;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: content-box;
+    border-bottom: 3px solid orange;
+    border-radius: 0 0 20px 20px;
+}
+
+.divImage {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divImage img {
+    width: 65px;
+    background-color: white;
+    border-radius: 500px;
+    padding: 4px;
+}
+
+nav .divLinksList {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divLinksList input.NavCheckbox {
+    display: none;
+}
+
+.divLinksList ul {
+    display: flex;
+    align-items: center;
+}
+
+.divLinksList ul li a,
+.divLinksList ul li button {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 7px;
+    transition-duration: 0.2s;
+}
+
+.divLinksList ul li button {
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+.divLinksList ul li a.activeNavLink, 
+.divLinksList ul li a.activeNavLink:hover {
+    background-color: #4CC9F0;
+    color: white;
+}
+
+.divLinksList ul li a:hover {
+    color: #4ccaf0c2;
+}
+
+.divLinksList label {
+    display: none;
+}
+
+.divLinksList label i {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+
+    .divLinksList ul {
+        background-color: #3A0CA3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        padding: 30px 0 80px 0;
+        transform: translateX(-120%);
+        transition-duration: 0.3s;
+    }
+
+    .NavCheckbox:checked ~ ul {
+        transform: translateX(0);
+    }
+
+    .divLinksList ul li {
+        margin: 15px 0;
+    }
+
+    .divLinksList label {
+        display: block;
+    }
+
+}

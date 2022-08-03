@@ -1,0 +1,53 @@
+* {
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form .divInput {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+form .divInput label {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+form .divInput textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 15px;
+    resize: none;
+    font-size: 1.05em;
+    height: 60px;
+    outline: none;
+}
+
+form .divInput input {
+    height: 40px;
+    font-size: 1.2em;
+    padding: 0 15px;
+    border-radius: 500px;
+    outline: none;
+    border: 2px solid black;
+}
+
+form .divButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .divButton button {
+    background-color: rgb(0, 240, 240);
+    color: rgb(42, 42, 42);
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 500px;
+    cursor: pointer;
+    margin-top: 20px;
+}

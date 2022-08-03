@@ -1,0 +1,40 @@
+.cartContainer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(171, 171, 171);
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(150, 150, 150);
+}
+
+.cartContainer div {
+    width: 100%;
+}
+
+.cartContainer div .divIcons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.cartContainer div .divIcons a:first-child {
+    margin-right: 15px;
+}
+
+.cartContainer div .divIcons i,
+.cartContainer div .divIcons a i {
+    font-size: 1.5em;
+    color: rgb(79, 79, 79);
+    cursor: pointer;
+}
+
+.cartContainer div h3 {
+    margin: 0;
+}
+
+.cartContainer div div {
+    margin: 5px 0;
+}
